@@ -1,0 +1,18 @@
+{
+    "name": "numst/container",
+    "description": "this is a php container",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "numst",
+            "email": "894797541@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4":{
+            "Numst\\": "src"
+        }
+    }
+}
