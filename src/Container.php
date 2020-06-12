@@ -1,7 +1,7 @@
 <?php
 /**
  * 
- * DI IOC 
+ * DI IOC TEST
  * php version 7
  *
  * @category Container
@@ -18,7 +18,7 @@ class Container {
 	 * 容器绑定
 	 * @var array()
 	 */
-	public building = [];
+	public $building = [];
 
 	/**
 	 * 注册一个绑定到容器
@@ -52,7 +52,7 @@ class Container {
 		return function ($c) use($abstract,$concrete) {
 			$method = ($abstract == $concrete)?'build':'make';
 			return $c->$method($concrete);
-		}
+		};
 	}
 
 	/**
